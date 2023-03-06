@@ -2,6 +2,8 @@
 % Baza wiedzy o układzie klocków
 % Definiowanie predykaty:
 %     na/2
+%     pod/2
+%     miedzy/3	
 % ==============================
 
 % na(X/Y)
@@ -18,3 +20,24 @@
 % -------------------------------------na/2
 	pod(X,Y):-na(Y,X).
 % -------------------------------------na/2
+% miedzy(X,Y,Z)
+% opis: spełniony, gdy klocek Y pomiedzy
+% klockami Y,Z
+% -------------------------------------miedzy/3
+	miedzy(X,Y,Z):-na(X,Y),pod(X,Z).
+	miedzy(X,Y,Z):-na(X,Z),pod(X,Y).
+% -------------------------------------miedzy/3
+/*
+Program składa się z 6 klauzul.
+Program zawiera 3 definicję relacji.
+Program składa się z 3 faktów i z 3 reguł.
+
+*/
+
+/*
+Sesja prologowa
+
+1. Czy klocek d leży na klocku?
+?- na(d,c)
+true.
+*/
