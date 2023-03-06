@@ -5,3 +5,4 @@ X = c.
 X = c.
 
 , - koniunkcja
+_ - zmienna anonimowa
