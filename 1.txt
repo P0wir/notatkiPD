@@ -7,3 +7,4 @@ X = c.
 , - koniunkcja
 _ - zmienna anonimowa
 :- implikacja
+; - alternatywa
