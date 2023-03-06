@@ -1,0 +1,7 @@
+?- na(X,a).
+X = c.
+
+?- na(X,a),na(X,b).
+X = c.
+
+, - koniunkcja
