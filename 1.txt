@@ -8,3 +8,5 @@ X = c.
 _ - zmienna anonimowa
 :- implikacja
 ; - alternatywa
+
+ fn(a,X,f(g(Y)))=fn(V,h(Z,V),f(V)). - unifikacja termów
