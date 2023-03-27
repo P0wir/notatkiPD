@@ -1,0 +1,35 @@
+[X|T|  [a,[b],[c]]
+
+X = a, T=[[b],[c]]
+
+[a,b]  [X,Y|T]
+
+X=a, Y=b, T=[]
+
+
+[f(X),c, Z]  [f(g(a)), Y, f(Y)]
+
+X = g(a), Y = c, Z = f(c)
+
+[[a,b],c]  [X|T]
+
+X=[a,b]
+T=[C]
+
+[X,Y|T]  [[a,b]]
+
+nie da sie uzgodnic
+
+[g(Z), f(a), X]  [X,Z,g(y)]
+
+X=g(f(a))
+Z=f(a)
+Y=f(a)
+
+
+[Z, f(g(X)), a]  [g(X), f(g(b)), Z]
+
+Z = g(b)
+X = b
+
+tych list nie da sie ze soba uzgodnic
