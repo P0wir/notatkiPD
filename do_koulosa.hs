@@ -29,3 +29,7 @@ suma_lista (x:xs) = x + suma_lista xs
 usun_ostatni::[a]->[a]
 usun_ostatni[_] = []
 usun_ostatni(x:xs)=x:usun_ostatni xs
+
+usun::[a]->[a]
+usun xs=reverse(tail(reverse xs))
+
